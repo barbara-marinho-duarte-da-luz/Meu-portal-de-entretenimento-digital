@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Entretenimento Digital</title>
+    
+    <!-- 1. CSS Reset (Sempre linkado antes do estilo principal) -->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    
+    <!-- 2. CSS Externo -->
+    <link rel="stylesheet" type="text/css" href="estiloN.css">
+
+    <!-- 3. CSS Interno (Exigência da atividade) -->
+    <style>
+        /* Uso de ID (#) para estilizar o título principal */
+        #titulo-principal {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Aplicação do ID -->
+    <h1 id="titulo-principal">Meu Portal de Entretenimento Digital</h1>
+    
+    <!-- CSS Inline (Exigência da atividade: style direto na tag) -->
+    <p style="text-align: center; font-size: 1.2em; margin-bottom: 40px; padding: 0 20px;">
+        Olá! Bem-vindo ao Meu Portal de Entretenimento Digital! 
+        Meu nome é Barbara Marinho Duarte da Luz e aqui você conhecerá um 
+        pouco do meu gosto para filmes, séries, música, podcast e tecnologia! 
+        Espero que goste do meu universo!
+    </p>
+
+    <!-- Início do Container Flexbox (PAI) -->
+    <div class="container">
+
+        <!-- Coluna 1: Filmes (FILHO) -->
+        <div class="coluna esquerda">
+            <h2>FILMES E SÉRIES</h2>
+            <p> 
+                <strong>Filme:</strong> Vingadores Ultimato (2019) - Marvel Studios<br>
+                Este filme é a conclusão épica da "Saga do Infinito" do Marvel Studios, encerrando 11 anos e 22 filmes do Universo Cinematográfico Marvel. Após Thanos usar as Joias do Infinito para eliminar metade de toda a vida no universo em Vingadores: Guerra Infinita, os heróis tentam se recuperar.
+            </p>
+            <img src="vingadores.jpg" alt="Pôster Vingadores"> 
+            <p class="fonte">
+                Fonte: <a href="https://www.primevideo.com/-/pt/detail/0P5699HX4S6UTRBOYYMCIGWTK3" target="_blank">Assista ao filme clicando aqui!</a>
+            </p>
+
+            <p> 
+                <strong>Série:</strong> Bridgerton - Netflix<br>
+                A série Bridgerton é uma adaptação dos romances de época de Julia Quinn. <br>
+                • 1ª Temporada: Daphne Bridgerton e Simon Basset.<br>
+                • 2ª Temporada: Anthony Bridgerton e Kate Sharma.<br>
+                • 3ª Temporada: Colin Bridgerton e Penelope Featherington.<br>
+                • 4ª Temporada: Benedict Bridgerton.
+            </p>
+            <img src="bridgerton.jpg" alt="Pôster Bridgerton"> 
+            <p class="fonte">
+                Fonte: <a href="https://www.netflix.com/br/title/80232398" target="_blank">Assista a série clicando aqui!</a>
+            </p>
+        </div>
+
+        <!-- Coluna 2: Música (FILHO) -->
+        <div class="coluna centro">
+            <h2>MÚSICA E PODCASTS</h2>
+            <p>
+                A plataforma que utilizo para ouvir músicas e podcasts é o Spotify, uma plataforma global de streaming de áudio. Nela você pode criar suas playlists com seus ritmos favoritos!
+            </p>
+            <img src="spotify.png" alt="Logo Spotify"> 
+            
+            <p>
+                Música é um gosto particular, mas eu escuto com o meu marido e recomendaria para você o podcast "Os Sócios", um programa de entrevistas e debates focado em empreendedorismo e negócios.
+            </p>
+            <img src="os socios.jpg" alt="Capa Podcast Os Sócios">
+            <p class="fonte">
+                Fonte: <a href="https://open.spotify.com/show/17bkR8GX6FmyKYvhQv4nOi" target="_blank">Acesse o Spotify clicando aqui!</a>
+            </p>
+        </div>
+
+        <!-- Coluna 3: Tecnologia (FILHO) -->
+        <div class="coluna direita">
+            <h2>TECNOLOGIA</h2>
+            <p>
+                Como a ferramenta tecnológica que mais tenho usado, deixo aqui como tecnologia o Google Gemini, assistente virtual e chatbot de inteligência artificial generativa. Ele é meu companheiro no meu dia a dia para estudos, criação de conteúdo e planejamento pessoal.
+            </p>
+            <img src="gemini.png" alt="Logo Gemini"> 
+            <img src="chat gemini.jpg" alt="Tela do Chat Gemini">
+            <p class="fonte">
+                Fonte: <a href="https://gemini.google.com/app" target="_blank">Divirta-se com o Gemini clicando aqui!</a>
+            </p>
+        </div>
+
+    </div> <!-- FIM do Container Flexbox -->
+</body>
+</html>

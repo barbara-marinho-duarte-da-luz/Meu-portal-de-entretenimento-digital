@@ -1,0 +1,68 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS E TIPOGRAFIA
+   ========================================= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f9;
+}
+
+/* Estilização padronizada dos subtítulos via tag */
+h2 {
+    background-color: rebeccapurple;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* =========================================
+   SISTEMA DE GRID COM FLEXBOX
+   ========================================= */
+/* O container pai ativa o modo Flexbox */
+.container {
+    display: flex;
+    flex-direction: row; /* Coloca os itens em linha */
+    justify-content: space-between;
+    gap: 20px; /* Cria um espaçamento entre as 3 colunas */
+    padding: 0 20px; /* Descola o conteúdo das bordas da tela */
+}
+
+/* Cada coluna filha ocupa exatamente o mesmo espaço */
+.coluna {
+    flex: 1; /* Faz as 3 colunas terem a mesma largura */
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px; /* Arredonda as bordas dos blocos brancos */
+}
+
+/* =========================================
+   ESTILIZAÇÃO DE IMAGENS E FONTES
+   ========================================= */
+/* Garante que as imagens não vazem para fora da coluna */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Uso de Classe (.fonte) para padronizar as legendas */
+.fonte {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+
+/* Configuração de cores para os links */
+a:link, a:visited {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
